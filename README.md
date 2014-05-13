@@ -8,7 +8,7 @@ Based on amazing [article](http://papweb.wordpress.com/2011/07/29/spring-mvc-3-j
 ```xml
     mvn install
 ```
-* Deploy the .war on some web container (ex. Tomcat) and type in your browser:<br/>
+* Deploy the .war in any web container (such as Apache Tomcat) and type in your browser:<br/>
 ```xml
 	http://localhost:8080/jsfspringdemo-0.0.1-SNAPSHOT/helloWorld
 ```

@@ -1,0 +1,21 @@
+.error {
+	color: #ff0000;
+}
+
+.errorblock {
+	color: #000;
+	background-color: #ffEEEE;
+	border: 3px solid #ff0000;
+	margin: 16px;
+}
+
+.successblock {
+	color: #000;
+	background-color: #D3FACF;
+	border: 3px solid #51CF46;
+	margin: 16px;
+}
+
+.label {
+	font-weight: bold;
+}

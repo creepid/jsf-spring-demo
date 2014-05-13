@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<title>#{msg['helloWorld.title']}</title> 	
+	<h:outputStylesheet name="css/styles.css" />
+</h:head>
+<h:body>
+	<p>${helloWorld.message}</p>
+	<p>${helloWorld.counter}</p>
+	<p>#{msg['helloWorld.say']}</p>
+
+	<h:form prependId="false">
+		<h:messages infoClass="successblock" errorClass="errorblock"/>
+	
+		<h:panelGrid columns="3">
+			<h:outputLabel value="#{msg['helloWorld.message']}" styleClass="label" />
+			<h:inputText id="message" value="#{helloWorld.message}" />
+			<h:message for="message" styleClass="error"/>
+
+			<h:outputLabel value="#{msg['helloWorld.counter']}" styleClass="label" />
+			<h:inputText id="counter" value="#{helloWorld.counter}" />
+			<h:message for="counter" styleClass="error"/>
+		</h:panelGrid>
+
+		<h:commandButton value="#{msg['helloWorld.send']}" action="send" />
+	</h:form>
+
+	<p>#{msg['helloWorld.graphicimage']}</p>
+	<h:graphicImage name="images/jsf.png" />
+	<p>#{msg['helloWorld.src']}</p>
+	<img src="resources/images/spring.png"></img>
+
+</h:body>
+</html>
